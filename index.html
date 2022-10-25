@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="style.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>atividade</title>
+  </head>
+  <body>
+    <header>
+      <p id="paragrafo"><b>Olá</b></p>
+
+      <button onclick="traduzir()">Traduzir</button>
+    </header>
+    <main>
+      <div id="lmp">
+        <!--onclick chama a função interrupitor-->
+        <img
+          src="https://img.freepik.com/fotos-premium/modelo-3d-de-uma-lampada-transparente-apagada-em-um-fundo-preto-isolado-fundo-escuro_379368-286.jpg"
+          onclick="interruptor()"
+          id="lampada"
+        />
+        <h4 id="contador">0</h4>
+      </div>
+
+      <div id="segundo">
+        <button onclick="addQuadrado()">Adicionar Quadrado</button>
+        <button onclick="removeQuadrado()">Remover Quadrado</button>
+        <div id="quadrado" style="display: flex"></div>
+      </div>
+
+      <div id="terceiro">
+        <h2 id="titulo">
+          Cadastre seus dados e saiba se poderá participar do evento
+        </h2>
+        <div id="resultado">
+          <h4 id="nome"></h4>
+          <h3 id="idade"></h3>
+        </div>
+        <button onclick="verificar()">Verificar</button>
+      </div>
+    </main>
+  </body>
+</html>
